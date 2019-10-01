@@ -84,6 +84,19 @@ public class Coisa {
             saude.defineSaudeFisica("fraca");
 
             System.out.println(saude.getStatusGeral());
+            
+            
+            ContaCantina cantinaSeuOlavo = new ContaCantina("Seu Olavo");            
+
+            cantinaSeuOlavo.cadastraLanche(2, 200);
+
+            cantinaSeuOlavo.cadastraLanche(1, 1000);
+
+            cantinaSeuOlavo.pagaConta(100);
+
+            System.out.println(cantinaSeuOlavo.getFaltaPagar());
+
+            System.out.println(cantinaSeuOlavo.toString());
 
     }  
 
